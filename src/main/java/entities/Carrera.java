@@ -12,6 +12,7 @@ public class Carrera {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "nombre_carrera", length = 100, nullable = false)
     private String nombre;
 
@@ -21,9 +22,9 @@ public class Carrera {
     @Override
     public String toString() {
         return "Datos de la Carrera" + '\n' +
-                "id=" + id +
-                ", nombre='" + nombre + '\n' +
-                ", precio=" + precio + '\n' +
-                "==========";
+                "id: " + id +
+                "| nombre: '" + nombre + '\n' +
+                "| precio: " + precio + '\n' +
+                "=================================================";
     }
 }

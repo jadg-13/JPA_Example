@@ -15,21 +15,19 @@ public class Main {
 
         EntityManager em = JPAUtil.getEntityManager();
 
-    /*   Carrera carrera = new Carrera();
+        Carrera carrera = new Carrera();
         carrera.setNombre("Ingenieria en Sistemas xyz");
         carrera.setPrecio(250);
 
         CarreraDao dao = new CarreraDao(em);
 
-        System.out.println( dao.guardar(carrera));
-/*/
-
-        CarreraDao dao = new CarreraDao(em);
+        System.out.println(dao.guardar(carrera));
 
         List<Carrera> carreras = dao.listar();
-        for (Carrera carrera : carreras) {
-            System.out.println(carrera);
+        for (Carrera c : carreras) {
+            System.out.println(c);
         }
+        System.out.println("==================================================");
 
 
     }
